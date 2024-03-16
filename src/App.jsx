@@ -8,9 +8,16 @@ function App() {
   const [cart, setCart] = useState([]);
   //console.log(cart);
 
+  const [showAlert, setShowAlert] = useState(false);
+
   const handleWantToCook = (recipe) => {
+    const isExist = cart.find((item) => item.id == recipe.id);
+    if (!isExist) {
+      setCart([...cart, recipe]);
+    } else {
+      setShowAlert(true);
+    }
     // console.log("click", recipe);
-    setCart([...cart, recipe]);
   };
 
   const handleRemoveItem = (id) => {
@@ -27,6 +34,13 @@ function App() {
         <Recipes handleWantToCook={handleWantToCook}></Recipes>
         <Sidebar cart={cart} handleRemoveItem={handleRemoveItem}></Sidebar>
       </div>
+      {showAlert && (
+        <div className="toast toast-top toast-end bg-red-400 rounded-full">
+          <div className="alert alert-info">
+            <span>item already exist</span>
+          </div>
+        </div>
+      )}
     </>
   );
 }
