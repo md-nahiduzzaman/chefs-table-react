@@ -19,7 +19,7 @@ const Sidebar = ({ cart, handleRemoveItem }) => {
   };
 
   return (
-    <div className="w-[25%]">
+    <div className="w-[25%] ml-16">
       <h1>this is sidebar</h1>
       <Cooks
         cart={cart}

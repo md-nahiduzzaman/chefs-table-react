@@ -9,11 +9,13 @@ const CookList = ({ item, handleCookingList, handleRemoveItem }) => {
     calories,
   } = item;
   return (
-    <div className="mt-32">
-      <h1>{recipe_name}</h1>
-      <h1>{preparing_time}</h1>
-      <h1>{calories}</h1>
+    <tr>
+      <th>#</th>
+      <td>{recipe_name}</td>
+      <td>{preparing_time}</td>
+      <td>{calories}</td>
       <button
+        className="btn bg-[#0BE58A]"
         onClick={() => {
           handleCookingList(item, preparing_time, calories),
             handleRemoveItem(id);
@@ -21,7 +23,7 @@ const CookList = ({ item, handleCookingList, handleRemoveItem }) => {
       >
         Preparing
       </button>
-    </div>
+    </tr>
   );
 };
 

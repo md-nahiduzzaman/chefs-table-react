@@ -9,11 +9,12 @@ const CookingList = ({ item }) => {
     calories,
   } = item;
   return (
-    <div className="mb-32">
-      <h1>{recipe_name}</h1>
-      <p>{preparing_time}</p>
-      <p>{calories}</p>
-    </div>
+    <tr>
+      <th>#</th>
+      <td>{recipe_name}</td>
+      <td>{preparing_time}</td>
+      <td>{calories}</td>
+    </tr>
   );
 };
 
