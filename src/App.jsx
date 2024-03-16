@@ -1,9 +1,18 @@
 import "./App.css";
+import Header from "./components/Header/Header";
+import Recipes from "./components/Recipes/Recipes";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="container mx-auto">
+        <Header></Header>
+      </div>
+      <div className="container mx-auto flex">
+        <Recipes></Recipes>
+        <Sidebar></Sidebar>
+      </div>
     </>
   );
 }
