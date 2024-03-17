@@ -1,6 +1,5 @@
 const CookingList = ({ item }) => {
   const {
-    id,
     recipe_name,
     recipe_image,
     short_description,
