@@ -9,9 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [cart, setCart] = useState([]);
-  //console.log(cart);
-
-  // const [showAlert, setShowAlert] = useState(false);
 
   const handleWantToCook = (recipe) => {
     const isExist = cart.find((item) => item.id == recipe.id);
@@ -38,9 +35,8 @@ function App() {
         <div className="flex flex-col items-center text-center mb-14">
           <h1 className="font-semibold text-4xl">Our Recipes</h1>
           <p className="w-[65%] text-gray-600">
-            Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-            vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-            elementum mauris aenean neque.{" "}
+            Explore a tantalizing array of meticulously crafted dishes in Our
+            Recipes section, perfect for every culinary adventure.
           </p>
         </div>
         <div className="flex gap-10 mb-24">
@@ -49,13 +45,6 @@ function App() {
         </div>
       </div>
       <ToastContainer />
-      {/* {showAlert && (
-        <div className="toast toast-top toast-end bg-red-400 rounded-full">
-          <div className="alert alert-info">
-            <span>item already exist</span>
-          </div>
-        </div>
-      )} */}
     </>
   );
 }
