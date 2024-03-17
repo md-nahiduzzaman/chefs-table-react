@@ -64,12 +64,15 @@ const Header = () => {
           </div>
           <div className="navbar-end">
             <div className="flex gap-2">
-              <div className="form-control">
+              <div
+                className="form-control flex flex-row items-center rounded-full px-4"
+                style={{ backgroundColor: "rgba(21, 11, 43, 0.15)" }}
+              >
+                <img src="/image/search.svg" alt="" />
                 <input
                   type="text"
                   placeholder="Search"
-                  className="input input-bordered w-24 md:w-auto rounded-full border-none"
-                  style={{ backgroundColor: "rgba(21, 11, 43, 0.15)" }}
+                  className="input input-bordered w-24 md:w-auto  border-none"
                 />
               </div>
               <div className="dropdown dropdown-end">

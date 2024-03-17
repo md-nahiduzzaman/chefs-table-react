@@ -8,7 +8,7 @@ const CookingList = ({ item }) => {
     calories,
   } = item;
   return (
-    <tr>
+    <tr className="font-fira">
       <th>#</th>
       <td>{recipe_name}</td>
       <td>{preparing_time}</td>

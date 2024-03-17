@@ -9,7 +9,7 @@ const CookList = ({ item, handleCookingList, handleRemoveItem }) => {
     calories,
   } = item;
   return (
-    <tr>
+    <tr className="font-fira">
       <th>#</th>
       <td>{recipe_name}</td>
       <td>{preparing_time}</td>

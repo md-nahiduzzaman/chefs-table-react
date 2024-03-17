@@ -10,7 +10,7 @@ const Cookings = ({ cookingsItem, totalTime, totalCalories }) => {
       <div className="overflow-x-auto">
         <table className="table text-gray-500">
           {/* head */}
-          <thead>
+          <thead className="font-fira">
             <tr>
               <th></th>
               <th>Name</th>
