@@ -39,7 +39,7 @@ function App() {
             elementum mauris aenean neque.{" "}
           </p>
         </div>
-        <div className="flex gap-10 mb-28">
+        <div className="flex gap-10 mb-24">
           <Recipes handleWantToCook={handleWantToCook}></Recipes>
           <Sidebar cart={cart} handleRemoveItem={handleRemoveItem}></Sidebar>
         </div>
