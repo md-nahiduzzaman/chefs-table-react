@@ -4,18 +4,22 @@ import Header from "./components/Header/Header";
 import Recipes from "./components/Recipes/Recipes";
 import Sidebar from "./components/Sidebar/Sidebar";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   const [cart, setCart] = useState([]);
   //console.log(cart);
 
-  const [showAlert, setShowAlert] = useState(false);
+  // const [showAlert, setShowAlert] = useState(false);
 
   const handleWantToCook = (recipe) => {
     const isExist = cart.find((item) => item.id == recipe.id);
     if (!isExist) {
       setCart([...cart, recipe]);
     } else {
-      setShowAlert(true);
+      // setShowAlert(true);
+      toast("item already exist");
     }
     // console.log("click", recipe);
   };
@@ -44,13 +48,14 @@ function App() {
           <Sidebar cart={cart} handleRemoveItem={handleRemoveItem}></Sidebar>
         </div>
       </div>
-      {showAlert && (
+      <ToastContainer />
+      {/* {showAlert && (
         <div className="toast toast-top toast-end bg-red-400 rounded-full">
           <div className="alert alert-info">
             <span>item already exist</span>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }
