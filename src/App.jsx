@@ -27,12 +27,22 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-24">
         <Header></Header>
       </div>
-      <div className="container mx-auto flex">
-        <Recipes handleWantToCook={handleWantToCook}></Recipes>
-        <Sidebar cart={cart} handleRemoveItem={handleRemoveItem}></Sidebar>
+      <div className="container mx-auto">
+        <div className="flex flex-col items-center text-center mb-14">
+          <h1 className="font-semibold text-4xl">Our Recipes</h1>
+          <p className="w-[65%] text-gray-600">
+            Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
+            vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
+            elementum mauris aenean neque.{" "}
+          </p>
+        </div>
+        <div className="flex gap-10 mb-28">
+          <Recipes handleWantToCook={handleWantToCook}></Recipes>
+          <Sidebar cart={cart} handleRemoveItem={handleRemoveItem}></Sidebar>
+        </div>
       </div>
       {showAlert && (
         <div className="toast toast-top toast-end bg-red-400 rounded-full">

@@ -2,11 +2,13 @@ import CookingList from "../CookingList/CookingList";
 
 const Cookings = ({ cookingsItem, totalTime, totalCalories }) => {
   return (
-    <div>
-      <h1>Currently cooking: {cookingsItem.length}</h1>
-
+    <div className="flex flex-col items-center">
+      <h1 className="font-semibold text-xl">
+        Currently cooking: {cookingsItem.length}
+      </h1>
+      <hr className="bg-gray-200  w-[70%]" style={{ opacity: "0.6" }} />
       <div className="overflow-x-auto">
-        <table className="table">
+        <table className="table text-gray-500">
           {/* head */}
           <thead>
             <tr>
@@ -27,13 +29,14 @@ const Cookings = ({ cookingsItem, totalTime, totalCalories }) => {
           </tbody>
         </table>
       </div>
-
-      <p>
-        Total Time = <span>{totalTime}</span> minutes
-      </p>
-      <p>
-        Total Calories = <span>{totalCalories} calories</span>
-      </p>
+      <div>
+        <p>
+          Total Time = <span>{totalTime}</span> minutes
+        </p>
+        <p>
+          Total Calories = <span>{totalCalories} calories</span>
+        </p>
+      </div>
     </div>
   );
 };

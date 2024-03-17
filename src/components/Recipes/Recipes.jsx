@@ -11,15 +11,10 @@ const Recipes = ({ handleWantToCook }) => {
       .then((data) => setRecipes(data));
   }, []);
   return (
-    <div className="w-[75%]">
-      <div>
-        <h1>Our Recipes</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-          vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-          elementum mauris aenean neque.{" "}
-        </p>
-      </div>
+    <div
+      className="w-[75%] rounded-lg"
+      style={{ border: "1px solid  rgba(40, 40, 40, 0.2)  " }}
+    >
       <div className=" grid grid-cols-3 gap-6">
         {recipes.map((recipe) => (
           <Recipe

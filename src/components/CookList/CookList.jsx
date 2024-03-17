@@ -15,7 +15,7 @@ const CookList = ({ item, handleCookingList, handleRemoveItem }) => {
       <td>{preparing_time}</td>
       <td>{calories}</td>
       <button
-        className="btn bg-[#0BE58A]"
+        className="btn bg-[#0BE58A] border-none rounded-full text-[#150B2B]"
         onClick={() => {
           handleCookingList(item, preparing_time, calories),
             handleRemoveItem(id);

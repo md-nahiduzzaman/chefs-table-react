@@ -3,13 +3,13 @@ import CookList from "../CookList/CookList";
 const Cooks = ({ cart, handleCookingList, handleRemoveItem }) => {
   console.log(cart);
   return (
-    <div>
-      <h1>Want to cook: {cart.length} </h1>
-
+    <div className="flex flex-col items-center mb-14">
+      <h1 className="font-semibold text-xl">Want to cook: {cart.length} </h1>
+      <hr className="bg-gray-200  w-[70%]" style={{ opacity: "0.6" }} />
       <div className="overflow-x-auto">
-        <table className="table">
+        <table className="table text-gray-500">
           {/* head */}
-          <thead>
+          <thead className="">
             <tr>
               <th></th>
               <th>Name</th>

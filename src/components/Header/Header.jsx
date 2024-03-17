@@ -44,7 +44,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className=" text-2xl font-bold">Recipe Calories</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -68,7 +68,8 @@ const Header = () => {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="input input-bordered w-24 md:w-auto"
+                  className="input input-bordered w-24 md:w-auto rounded-full border-none"
+                  style={{ backgroundColor: "rgba(21, 11, 43, 0.15)" }}
                 />
               </div>
               <div className="dropdown dropdown-end">
@@ -80,7 +81,7 @@ const Header = () => {
                   <div className="w-10 rounded-full">
                     <img
                       alt="Tailwind CSS Navbar component"
-                      src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                      src="../../../public/image/profile.png"
                     />
                   </div>
                 </div>

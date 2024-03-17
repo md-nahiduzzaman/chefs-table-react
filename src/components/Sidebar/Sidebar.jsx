@@ -19,8 +19,10 @@ const Sidebar = ({ cart, handleRemoveItem }) => {
   };
 
   return (
-    <div className="w-[25%] ml-16">
-      <h1>this is sidebar</h1>
+    <div
+      className="w-[25%] rounded-lg"
+      style={{ border: "1px solid  rgba(40, 40, 40, 0.2)  " }}
+    >
       <Cooks
         cart={cart}
         handleCookingList={handleCookingList}
