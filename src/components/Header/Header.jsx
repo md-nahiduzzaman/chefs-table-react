@@ -79,10 +79,7 @@ const Header = () => {
                   className="btn btn-ghost btn-circle avatar"
                 >
                   <div className="w-10 rounded-full">
-                    <img
-                      alt="Tailwind CSS Navbar component"
-                      src="../../../public/image/propic.svg"
-                    />
+                    <img alt="" src="/image/propic.svg" />
                   </div>
                 </div>
                 <ul
